@@ -21,7 +21,7 @@ public class JqueryDropDown {
 		
 		driver.findElement(By.id("justAnInputBox")).click();
 		//selectChoiceValues(driver,"choice 1"); //single choice
-		selectChoiceValues(driver,"choice 1","choice 2 1", "choice 2 2", "choice 6 1"); // multiple choice
+		//selectChoiceValues(driver,"choice 1","choice 2 1", "choice 2 2", "choice 6 1"); // multiple choice
 		selectChoiceValues(driver,"all"); // all choice
 		
 	}
