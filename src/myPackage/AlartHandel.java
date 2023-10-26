@@ -33,6 +33,7 @@ public class AlartHandel {
 		System.out.println("The message displayed on alert "+alertwindow.getText());
 		alertwindow.sendKeys("Welcome");
 		alertwindow.accept();
+		//
 		
 	}
 
