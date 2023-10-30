@@ -18,7 +18,7 @@ public class HandleLinks {
 		
 		//driver.findElement(By.linkText("Only on Netflix")).click(); // click full portion
 		//driver.findElement(By.partialLinkText("Only")).click(); // click only specific word in anywhere
-		
+		 
 		// how to find all the links in the webpage and find them
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		//System.out.println("Web page link list: "+links.size());
