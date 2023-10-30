@@ -16,7 +16,9 @@ public class InnerIFrame {
 		
 		//Switch to next buttton
 		WebElement outerFrame = driver.findElement(By.xpath("/html/body/section/div/div/iframe"));
-
+		//driver.switchTo().frame("singleframe");
+		driver.switchTo().frame(outerFrame); //switch to outer i frame
+	
 		//no need deafult content like other iframe. in this case no need to go back main contain
 		// check HandleIframe class
 		WebElement innerFrame = driver.findElement(By.xpath("//iframe[@src()='SingleFrame.html']"));
