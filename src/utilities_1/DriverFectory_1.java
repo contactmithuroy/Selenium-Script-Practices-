@@ -9,7 +9,7 @@ public class DriverFectory_1 {
 		
 
 		if(browserType.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\SeleniumWebdriver\\chromedriver-win64\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\SeleniumWebdriver\\chromedriver-win64119\\chromedriver.exe");
 			return  new ChromeDriver();
 		}else {
 			System.setProperty("webdriver.edge.driver","E:\\Selenium\\SeleniumWebdriver\\edgedriver_win64\\msedgedriver.exe");
