@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class MouseDragandDrop {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		String browserType = "chrome";
 		WebDriver driver;
 		driver = utilities_1.DriverFectory_1.open(browserType);
 		driver.get("http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(4,TimeUnit.MINUTES);
+		//driver.manage().timeouts().implicitlyWait(4,TimeUnit.MINUTES);
 		
 		//First drag and drop 
 		WebElement rome = driver.findElement(By.id("box6")); // source element 
@@ -26,9 +26,9 @@ public class MouseDragandDrop {
 		act.dragAndDrop(oslo, norway).perform(); // act already declare 
 		
 		
-		Thread.sleep(7000);
-		driver.quit();
-		driver.close();
+		//Thread.sleep(7000);
+		//driver.quit();
+		//driver.close();
 		
 	}
 }
